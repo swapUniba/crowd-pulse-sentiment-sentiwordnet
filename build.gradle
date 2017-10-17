@@ -15,7 +15,11 @@ repositories {
     }
 }
 
+configurations.all {
+    resolutionStrategy.cacheChangingModulesFor 0, 'seconds'
+}
+
 dependencies {
-    compile 'com.github.swapUniba:crowd-pulse-sentiment:0.0.1'
+    compile 'com.github.swapUniba:crowd-pulse-sentiment:master-SNAPSHOT'
     compile group: 'commons-io', name: 'commons-io', version: '2.4'
 }
